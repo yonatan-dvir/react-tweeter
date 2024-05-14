@@ -1,16 +1,16 @@
-import PostList from "./components/PostsList";
-import MainHeader from "./components/MainHeader";
+import PostList from "../components/PostsList";
+import MainHeader from "../components/MainHeader";
 import { useState } from "react";
 
-function App() {
-  const [modalIsVisible, setModalIsVisible] = useState(true);
+function Posts() {
+  const [modalIsVisible, setModalIsVisible] = useState(false);
 
   function hideModalHandler(event) {
     setModalIsVisible(false);
   }
 
   function showModalHandler(event) {
-    setModalIsVisible(true);
+    setModalIsVisible(false);
   }
 
   return (
@@ -23,4 +23,4 @@ function App() {
   );
 }
 
-export default App;
+export default Posts;
