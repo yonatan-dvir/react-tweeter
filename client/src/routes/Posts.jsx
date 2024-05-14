@@ -1,14 +1,14 @@
-import PostList from "../components/PostsList";
+import PostsList from "../components/PostsList";
 import MainHeader from "../components/MainHeader";
 import { useState } from "react";
-import NewPost from "./NewPost";
+import { Outlet } from "react-router-dom";
 
 function Posts() {
   return (
     <>
-      <NewPost />
+      <Outlet />
       <main>
-        <PostList />
+        <PostsList />
       </main>
     </>
   );
